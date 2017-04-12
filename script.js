@@ -46,11 +46,24 @@ var post = ["Raisin Bran", "Cookie Crisp", "Honey Smacks"];
 
 var cereal = [kellogs, post];
 
+function printCereal() {
+
 for(var i=0; i < cereal.length; i++) {
-	for(var j=0; j < cereal[i].length; i++) {
-		console.log(cereal[i][j])
+	var brand = cereal[i];
+	cerealNames(brand);
 	};
-};
+}; // closes printCereal();
+
+function cerealNames(brand) {
+	for (var i=0; i < brand.length; i++) {
+		var newDiv = "<div>" + brand[i] + "</div>";
+		var cerealBrands = document.getElementById("cerealBrands");
+		cerealBrands.innerHTML += newDiv;
+	};
+}; // closes cerealNames();
+
+printCereal();
+
 
 
 
