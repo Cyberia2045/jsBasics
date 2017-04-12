@@ -13,17 +13,17 @@
 // 	}
 // }; // Ends the hungry function
 
-var status = "hungry";
 
-function hungry(status) {
+function games(status) {
 
-	if (status === "hungry") {
-		alert("Go Eat")
-	}
-	else if (status === "bored") {
-		alert("Check the Fridge")
-	}
-	else {
-		alert("Do Nothing")
-	}
-}; // ends the hungry function
+if (status === "monopoly") {
+	alert("Let's Play Monopoly")
+}
+else if (status === "chess") {
+	alert("Let's Play Chess")
+}
+else { 
+	alert("You Must Make Decisions!")
+};
+
+}; //closes the games function
